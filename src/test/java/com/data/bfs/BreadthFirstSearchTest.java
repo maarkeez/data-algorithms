@@ -12,7 +12,7 @@ public class BreadthFirstSearchTest {
   
   private final BreadthFirstSearch<Integer> breadthFirstSearch = new BreadthFirstSearch<>();
   private static final GraphIntegerProvider testData = new GraphIntegerProvider();
-  private static final Graph<Integer> graph = testData.graph();
+  private static final Graph<Integer> graph = testData.graphDiamond();
   
   @Test
   public void searchWhenStartsInOne () {

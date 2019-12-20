@@ -21,7 +21,7 @@ public class GraphIntegerProvider {
    *   5
    * </pre>
    **/
-  public Graph<Integer> graph () {
+  public Graph<Integer> graphDiamond () {
     graph.addEdge(one, two);
     graph.addEdge(one, three);
     graph.addEdge(one, four);
@@ -30,6 +30,25 @@ public class GraphIntegerProvider {
     graph.addEdge(four, five);
     return graph;
   }
+  
+  /**
+   * <pre>
+   *   1
+   *  /|
+   * 2 3
+   * | |
+   * 5 4
+   * </pre>
+   **/
+  public Graph<Integer> graphTree () {
+    graph.addEdge(one, three);
+    graph.addEdge(three, four);
+   
+    graph.addEdge(one, two);
+    graph.addEdge(two, five);
+    return graph;
+  }
+  
   
   public Node<Integer> one () {
     return one;
